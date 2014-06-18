@@ -5,8 +5,11 @@ author：yunxiang@eefocus.com
 
 date:2014/06/09
 
-os:        linux
+os:        centos
+
 web:       nginx
+
 language:  php
+
 db:        mysql
 
