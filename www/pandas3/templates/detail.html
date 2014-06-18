@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>详情页</title>
+<script type="text/javascript" src="pandas3/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="pandas3/js/detail.js"></script>
+<link href="pandas3/css/detail.css" rel="stylesheet">
+</head>
+<body>
+	<div id="d_container">
+		<div class="header">
+			<div class="three_logo">
+		        	<a href="index.php"><img src="pandas3/images/pandas_logo.jpg"></a>
+		    </div>
+		</div>
+		<div class="main">
+			<div class="p_img">
+				<div class="p_img_area">
+					<a href="index.php">首页</a>
+					<span><{$product[0]["name_rs"]}></span>
+					<div class="p_main_img">
+						<img src='<{$m_img_dir}><{$product[0]["main_image_path"]}>'>
+						<!-- <img src="pandas3/images/main-product/main-1.png"> -->
+					</div>
+					<ul class="p_main_thumb">
+						<{$thumbArr=explode(";",$product[0]["thumb_path"])}>
+						<{foreach from=$thumbArr item=foo}>
+							<li><img src='<{$thumb_dir}><{$foo}>'></li>
+						<{/foreach}>
+						<!-- <li><img src="pandas3/images/main-product/main-1.png"></li>
+						<li><img src="pandas3/images/main-product/main-1.png"></li>
+						<li><img src="pandas3/images/main-product/main-1.png"></li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="p_price">
+				<p class="p_price_title">
+					<{$product[0]["name_rs"]}>
+				</p>
+				<div class="p_price_area">
+					<p class="p_price_value"><{$product[0]["price"]}></p>
+					<p class="purchase_num">
+						<span>数量</span>
+						<input type="number">
+						<span>件</span>
+					</p>
+					<div class="shop_cart" p_id="<{$product[0]['id']}>" p_name="<{$product[0]['name']}>" p_price="<{$product[0]['price']}>">加入购物车</div>
+					<div class="to_charge">去结算</div>
+				</div>
+			</div>
+		</div>
+		<div class="m_content">
+			<div class="m_content_title">
+				<div class="m_content_tab">
+					<span class="product_detail m_active">商品详情</span>
+					<span class="comment_detail">评价详情</span>
+					<span class="record_detail">购买记录</span>
+				</div>
+				<div class="m_content_remain">
+				</div>
+			</div>
+			<div class="m_product_detail">
+				<p>
+					<{$product[0]["content"]}>
+				</p>
+				<!-- <p>
+					品名：康师傅冰糖雪梨<br>
+					1.配料:水，雪梨，糖,啧啧啧啧啧啧啧啧啧啧啧啧啧啧啧在，水水水水谁谁谁水水水水，啧啧啧啧啧啧啧啧啧啧啧啧啧啧啧<br>
+					2.保质期：365天<br>
+					3.净含量：450ml/瓶<br>
+				</p> -->
+				<div class="m_product_detail_img">
+					<{$detailImgArr=explode(";",$product[0]["detail_image_path"])}>
+					<{foreach from=$detailImgArr item=foo}>
+						<img src='<{$detail_dir}><{$foo}>'>
+					<{/foreach}>
+					<!-- <img src="pandas3/images/main-product/main-1.png">
+					<img src="pandas3/images/main-product/main-2.jpg"> -->
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="slider_t">
+		    	<p>Please join us Three Pandas.com</p>
+		    </div>
+		    <div class="slider_b">
+		    	<p>yjl444693812@yandex.ru 9681812059 Дмитрий   9681812058Лёва</p>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>

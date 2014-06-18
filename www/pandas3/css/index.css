@@ -1,0 +1,166 @@
+@CHARSET "UTF-8";
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+#i_container{
+	width:1024px;
+	margin:0 auto;
+}
+/*页头*/
+.header{
+	width:100%;
+	min-width:1024px;
+	height:186px;
+}
+.three_logo{
+	width:315px;
+	height:180px;
+	float:left;
+}
+.three_logo img{
+	width:315px;
+	height:180px;
+}
+/*滚动信息展示*/
+.new_intro{
+	width:100%;
+	height:350px;
+	background-color:#c40000;
+}
+.new_intro p{
+	width:50%;
+	margin-top:20px;
+	margin-left:20px;
+	float:left;
+	line-height:40px;
+	font-weight:bold;
+	color:#fff;
+	font-family:-webkit-pictograph;
+	font-size:18px;
+}
+.news_img{
+	float:left;
+	height:300px;
+	border:2px solid #fff;
+	border-radius:2px;
+	margin-top:15px;
+	margin-left:50px;
+}
+.news_img ul li{
+	display:none;
+}
+.news_img ul .current_pic{
+	display:block;
+}
+.news_img img{
+	width:400px;
+	height:300px;
+}
+.lunbo{
+	text-align:right;
+}
+.lunbo span{
+	cursor:pointer;
+}
+.current_num{
+	background-color:green;
+	color:#fff;
+}
+/*主内容*/
+.main{
+	width:100%;
+	float:left;
+}
+.main_nav{
+	width:250px;
+	height:480px;
+	float:left;
+	margin-top:40px;
+	margin-left:30px;
+	border:2px solid #c40000;
+}
+
+.main_nav ul li{
+	height:60px;
+	line-height:60px;
+	text-align:left;
+	cursor:pointer;
+}
+.category_active{
+	background-color:#c40000;
+	color:#fff;
+}
+.main_content{
+	width:710px;
+	float:left;
+	margin-left:20px;
+	margin-top:30px;
+}
+.main_content ul{
+	width:100%;
+	float:left;
+}
+.main_content ul li{
+	width:140px;
+	height:160px;
+	display:inline-block;
+	float:left;
+	margin-left:10px;
+	margin-top:20px;
+	padding:10px;
+	
+	cursor:pointer;
+	border:1px solid #ccc;
+}
+.main_content ul li img{
+	width:140px;
+	height:140px;
+}
+.main_content ul li p{
+	width:160px;
+	height:27px;
+	line-height:27px;
+	background-color:#eee;
+	text-align:center;
+	margin-left:-10px;
+	font-family:-webkit-pictograph;
+	font-size:18px;
+	overflow:hidden;
+}
+/*页脚*/
+.footer{
+		width:100%;
+		min-width:1024px;
+		margin-top:20px;
+	}
+	.slider_t{
+		width:100%;
+		height:120px;
+		background-color:#c40000;
+	}
+	.slider_t p{
+		font-weight:bold;
+		color:#fff;
+		font-size:36px;
+		padding-top:70px;
+		text-align:right;
+		margin-right:20px;
+	}
+	.slider_b{
+		width:100%;
+		height:50px;
+	}
+	.slider_b p{
+		line-height:25px;
+		text-align:center;
+		font-size:14px;
+		padding:5px;
+		font-family:-webkit-pictograph;
+		font-size:18px;
+	}
