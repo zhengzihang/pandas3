@@ -1,6 +1,7 @@
 pandas3
 =======
-author：yunxiang@eefocus.com
+author：
+        yunxiang@eefocus.com
         
         479290401@qq.com  
 
